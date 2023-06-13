@@ -1,0 +1,253 @@
+
+<htmL>
+    <head>
+        <title>Brew hub</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    
+    <body>   
+        <div class="left">
+            <center><img src="logo.png" alt="logo"></center>
+
+            <span class="Social-Media">
+                <h6><p><FONT COLOR="orange">Visit our social media accounts</FONT></p></h6>
+                <a href="#"><i class="fab fa-facebook" aria-hidden="true"></i> Facebook</a>
+                <a href="#"><i class="fab fa-twitter" aria-hidden="true"></i> Twitter</a>
+                <a href="#"><i class="fab fa-instagram" aria-hidden="true"></i> Instagram</a>
+            </span>
+        </div>
+
+        <div class="right"> 
+            <h2><FONT COLOR="white">Customer </FONT>
+            <FONT COLOR="orange">Information</FONT></h2>
+
+            <hr class="line1"><br>
+            <form method="post" action="#">
+                <label for="username">Customer ID</label>
+                <input type="text" name="Customer_ID" id="Customer_ID" placeholder="Customer ID" method="post" maxlength="5" required="required">
+
+                <label for="fname">First name</label>
+                <input type="text" name="First_name" id="First_name" placeholder="First name" maxlength="20" required="required">
+
+                <label for="lname">Last name</label>
+                <input type="text" name="Last_name" id="Last_name" placeholder="Last name" maxlength="20" required="required">
+
+                <label for="cnumber">Contact Number</label>
+                <input type="text" name="Contact_number" id="Contact_number" placeholder="Contact number" maxlength="12" required="required">
+
+                <br><br>
+                <input type="submit" value="submit"></form>
+                <br>
+                <input type="reset" value="reset"></form> 
+                <a href="http://localhost/webpage/Orders.php">
+                <input type="submit" value="back">
+                </a>
+            
+            <?php
+            include('conn.php');
+            $sql=mysqli_query($conn,"SELECT * FROM customer");
+            $row=mysqli_fetch_array($sql);
+            ?>
+            </form>
+            
+            
+        </div>
+        <div class="query">
+            <table>
+                <tr>
+                    <td>Customer_ID</td>
+                    <td>First_name</td>
+                    <td>Last_name</td>
+                    <td>Contact_number</td>
+                </tr>
+                <tr>
+                <td><?php echo $row['Customer_ID']; ?></td>
+	            <td><?php echo $row['First_name']; ?></td>
+                <td><?php echo $row['Last_name']; ?></td>
+	            <td><?php echo $row['Contact_number']; ?></td>
+                </tr>
+            </table>
+            </div>
+        
+
+    </body>
+
+    <style type="text/css">
+    *{
+        margin:0;
+        padding:0;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        background-image: linear-gradient(180deg, orange 10%, black 80%);
+        padding-left: 700px;
+        padding-left: 40px;
+        
+    }
+        
+/*-----------------------LEFT SIDE DESIGNS----------------------*/
+    .left{
+        margin: 90;
+        width: 60%;
+        height: 750px;
+        box-shadow: -10px -10px 15px white,
+        10px 10px 15px #fa961c;  
+        background-size: cover;
+        text-align: center; 
+    }
+
+    a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+    margin: 50;
+    font-size: 25px;
+    }
+
+    a:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+    
+    }
+
+    a:hover {
+    color: black;
+    background-color: transparent;
+    text-decoration: underline;
+    }
+
+    a:active {
+    color: #fa961c;
+    background-color: transparent;
+    text-decoration: underline;
+    }
+
+    img {
+        margin: -20px;
+        padding: 0px;
+        width: 700px;
+        height: 600px;
+        background-size: 100%;
+    }
+
+
+    
+/*-----------------------RIGHT SIDE DESIGNS----------------------*/
+    .right{
+        width:  500px;
+        height: 750px;
+        background: black;
+        box-shadow: -10px -10px 15px white,
+        10px 10px 15px #fa961c;  
+        border-radius:20px;
+        color: white;
+        display: flex;
+        align-items: center;
+        flex-direction: column;      
+    }
+
+    h2{
+        font-family: Arial, sans-serif;
+        text-align: center;
+        font-size: 40px;
+        font-weight: 40px;
+        margin:50px 0px 20px 0px; 
+    }
+
+    form{
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        flex-direction: column ;
+    
+    }
+
+    .line1{
+        width: 400px;
+        height: 4px;
+        border-radius:20px;
+        background-color: #fa961c;
+        box-shadow: -1px -1px 2px white,
+        1px 1px 2px #fa961c; 
+    }
+
+    label{
+        font-family: Arial, sans-serif;
+        font-size:20px;
+        color:white;
+        margin: 15px;
+    }
+
+    input{
+        width: 230px;
+        height: 30px;
+        border-radius: 20px;
+        border: none;
+        outline:none;
+        background-color: #fa961c;
+        color:rgb(54,52,26);
+        padding:0px 10px;
+        box-shadow: 
+        inset 2px 2px 5px 0 rgba(0,0,0,0.3),
+        inset -4px -4px 10px 0 rgba(255,255,255,0.4);
+    }
+    ::placeholder{
+        color:rgba(33,44,48);
+        font-size: large;
+    }
+    
+    p{
+        font-family: Arial, sans-serif;
+        font-size:20px;
+        color:white;
+        margin: 15px;
+    }
+
+    input[type="submit"]{
+        width: 150px;
+        height: 50px;
+        margin: -5px;
+    }
+
+    input[type="reset"]{
+        width: 150px;
+        height: 50px;
+        margin-bottom: -35px;
+        padding-top: 10px;
+        padding: 10PX;
+    }
+
+    .query{
+        table-layout: auto;
+        background-color: aliceblue;
+    }
+    span{
+        font-family: Arial, sans-serif;
+        font-size:20px;
+        margin:25px 0px 15px 0px;
+    }
+    .query, th, td{
+        table-layout: auto;
+        background-color: aliceblue;
+        border: 1px solid;
+    }
+
+    .fab{
+        width: 20px;
+        text-align: center;
+        margin-left: 10px;
+        background-color:#fa961c;
+        font-size: 20px;
+        color:black;
+        padding:5px ;
+        border-radius: 20px;
+    }
+
+    /*---------------------------END----------------------------*/
+    </style>
+
+</htmL>

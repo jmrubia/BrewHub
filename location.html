@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Coffee Shop</title>
+  <style type="text/css">
+    
+    body {
+                font-family: Arial, sans-serif;
+                background-image: linear-gradient(180deg, orange 10%, black 80%);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            img {
+              margin: -60px;
+              padding: 0px;
+              padding-left: 55%;
+              padding-right: 50%;
+              margin-top: -60px;
+              margin-bottom: -120px;
+              width: 300px;
+              height: 250px;
+              background-size: 100%;
+            }
+            /*-----------------------LOGO DESIGNS-----------------------*/
+            Header{
+                padding-right:300px;
+                
+            }
+
+            .Logo{
+                display: block;
+            }
+            /*---------------------------END----------------------------*/
+
+            /*--------------------NAVIGATION DESIGNS--------------------*/
+
+            nav ul {
+                display: flex;
+                justify-content: space-around;
+                list-style: none;
+                background-color: #1b1b1b;
+            }
+
+            nav a {
+                text-decoration: none;
+                color: #fa961c;
+                padding: 10px;
+                display: block;
+            }
+            /*---------------------------END----------------------------*/
+
+            main {
+            margin-top: 90px;
+            margin: 20px auto 0 auto;
+            max-width: 800px;
+            }
+
+            section {
+            margin: 20px;
+            }
+
+            .container{
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            }  
+            .box {
+                width: 900px;
+                height: 350px;
+                background-size: cover;
+                background-position: center;
+                border-radius: 10px;
+                box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+                transition: transform 0.2s;
+                cursor: pointer;
+                transition: 0.5s all ease-in-out;
+                margin: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;  
+                 
+            }
+            p{
+                color: white;
+                text-align: center;
+                width: 300px;
+                height: 45px;
+                border-radius: 10px;
+                border: burlywood solid 3px;
+                margin-top: 260px;
+                background-color: rgb(27, 27, 27,.5);
+                font-size: large;
+            }
+            .box:hover {
+                transform: scale(1.05);
+            }
+            .box1 {
+                background-image: url('location.jpg');
+                top: 10%;
+      
+            }
+</style>
+  
+</head>
+<body>
+  <Header>                 
+    <center><img src="final logo.png" alt="logo"></center>
+</Header>
+
+          <section>
+          <nav>
+            <ul>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="about us.html">About Us</a></li>
+              <li><a href="product.html">Menu</a></li>
+              <li><a href="social.html">Contact Us</a></li>
+              <li><a href="costumer.html">Log in</a></li>
+            </ul>
+          </nav>
+        </section>
+    
+<main>
+  <div class="container">
+    <a id="no1"><div class="box box1"><p>Brgy. Sampaloc Santo Cristo Sariaya, Quezon</p></div></a>
+  </section>
+    <center>
+      <span class="Social-Media">
+          <h6><FONT COLOR="white">Visit the seller social media accounts</FONT></h6>
+          <a id="Facebook"><ion-icon name="logo-facebook"></ion-icon></a>
+          <a id="Twitter"><ion-icon name="logo-twitter"></ion-icon></a>
+          <a id="Instagram"><ion-icon name="logo-instagram"></ion-icon></a>
+      </span>
+  </center>
+  </section>      
+</main>
+</body>
+<script src="sample.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</html>

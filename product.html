@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Coffee Shop</title>
+  <style type="text/css">
+    
+    body {
+                font-family: Arial, sans-serif;
+                background-image: linear-gradient(180deg, orange 10%, black 80%);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            img {
+              margin: -60px;
+              padding: 0px;
+              padding-left: 55%;
+              padding-right: 50%;
+              margin-top: -60px;
+              margin-bottom: -120px;
+              width: 300px;
+              height: 250px;
+              background-size: 100%;
+            }
+            /*-----------------------LOGO DESIGNS-----------------------*/
+            Header{
+                padding-right:300px;
+                
+            }
+
+            .Logo{
+                display: block;
+            }
+            /*---------------------------END----------------------------*/
+
+            /*--------------------NAVIGATION DESIGNS--------------------*/
+
+            nav ul {
+                display: flex;
+                justify-content: space-around;
+                list-style: none;
+                background-color: #1b1b1b;
+            }
+
+            nav a {
+                text-decoration: none;
+                color: #fa961c;
+                padding: 10px;
+                display: block;
+            }
+            /*---------------------------END----------------------------*/
+
+            main {
+            margin: 0 auto;
+            max-width: 800px;
+            }
+
+            section {
+            margin: 20px;
+            }
+          
+            .nav{
+            align-items:center;
+            display:flex;
+            color:brown;
+            justify-content:space-around;
+            font-size:25px;
+            font-family:cursive;
+            padding:10px 30px;
+            }
+            .nav a{
+            color:brown;
+            text-decoration: none;
+            }
+            .nav a:hover{
+            color:white;
+            }
+            img{
+            width:300px;
+            }
+         
+            .mn{
+            text-align: center;
+            font-size: 40px;
+            font-family: cursive;
+            color: #432616;
+            }
+            .container{
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            }  
+            .box {
+                width: 300px;
+                height: 350px;
+                background-size: cover;
+                background-position: center;
+                border-radius: 10px;
+                box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+                transition: transform 0.2s;
+                cursor: pointer;
+                transition: 0.5s all ease-in-out;
+                margin: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+            }
+            p{
+                color: white;
+                text-align: center;
+                width: 170px;
+                height: 60px;
+                border-radius: 10px;
+                border: burlywood solid 3px;
+                margin-top: 260px;
+                background-color: rgb(27, 27, 27,.5);
+                font-size: x-large;
+            }
+
+            .box:hover {
+                transform: scale(1.05);
+            }
+            .box1 {
+                background-image: url('cheesecake.jpg');
+            }
+            .box2{
+                background-image: url('chocolate.jpg');
+            }
+            .box3{
+                background-image: url('coffeejelly.jpg');
+            }
+            .box4{
+                background-image: url('cookiesNcream.jpg');
+            }
+            .box5{
+                background-image: url('matcha.jpg');
+            }
+            .box6{
+                background-image: url('strawberry.jpg');
+            }
+
+       
+  </style>
+  
+</head>
+<body>
+  <Header>                 
+    <center><img src="final logo.png" alt="logo"></center>
+</Header>
+
+          <section>
+          <nav>
+            <ul>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="about us.html">About Us</a></li>
+              <li><a href="location.html">Location</a></li>
+              <li><a href="social.html">Contact Us</a></li>
+              <li><a href="costumer.html">Log in</a></li>
+            </ul>
+          </nav>
+        </section>
+        
+      
+        <title>MENU</title>
+    </head>
+    <body>
+        <div class="container">
+            <a id="no1"><div class="box box1"><p>CHEESECAKE CREAM</p></div></a>
+            <a id="no2"><div class="box box2"><p>CHOCOLATE CREAM</p></div></a>
+            <a id="no3"><div class="box box3"><p>COFFEE JELLY</p></div></a>
+            <a id="no4"><div class="box box4"><p>COOKIES n CREAM</p></div></a>
+            <a id="no5"><div class="box box5"><p>MATCHA CREAM</p></div></a>
+            <a id="no6"><div class="box box6"><p>STRAWBERRY CREAM</p></div></a>
+        </div>
+        <script src="show.js"></script>
+    </body>
+    <section id="contact">
+        <center>
+          <span class="Social-Media">
+              <h6><FONT COLOR="white">Visit the seller social media accounts</FONT></h6>
+              <a id="Facebook"><ion-icon name="logo-facebook"></ion-icon></a>
+              <a id="Twitter"><ion-icon name="logo-twitter"></ion-icon></a>
+              <a id="Instagram"><ion-icon name="logo-instagram"></ion-icon></a>
+          </span>
+      </center>
+      </section>      
+</main>
+</body>
+<script src="sample.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</html>
